@@ -274,7 +274,8 @@
     }
     .slides {
       position: relative;
-      aspect-ratio: 16/9;
+      aspect-ratio: 3/4;
+      max-height: 700px;
       overflow: hidden;
     }
     .slide {
@@ -288,7 +289,7 @@
     .slide-overlay {
       position: absolute;
       inset: 0;
-      background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, transparent 40%);
+      background: linear-gradient(to top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.4) 40%, transparent 70%);
     }
     .slide-caption {
       position: absolute;
@@ -296,6 +297,7 @@
       left: 2rem;
     }
     .slide-caption span {
+      text-shadow: 0 1px 4px rgba(0,0,0,0.8);
       font-family: 'Bebas Neue', sans-serif;
       font-size: 0.75rem;
       letter-spacing: 3px;
@@ -303,6 +305,7 @@
       color: var(--gold);
     }
     .slide-caption h3 {
+      text-shadow: 0 2px 8px rgba(0,0,0,0.8);
       font-family: 'Playfair Display', serif;
       font-size: 1.5rem;
       color: var(--white);
@@ -756,6 +759,7 @@
       .process-row { grid-template-columns: 1fr; }
       .form-row { grid-template-columns: 1fr; }
       .thumb-strip { display: none; }
+      .scroll-indicator { display: none; }
       .footer-inner { justify-content: center; text-align: center; }
       .footer-links { justify-content: center; }
     }
@@ -826,7 +830,7 @@
       <div class="slideshow reveal">
         <div class="slides" id="slides">
           <div class="slide active">
-            <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&h=675&fit=crop" alt="Kitchen remodel project">
+            <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=900&h=1200&fit=crop" alt="Kitchen remodel project">
             <div class="slide-overlay"></div>
             <div class="slide-caption">
               <span>Kitchen Remodel</span>
@@ -834,7 +838,7 @@
             </div>
           </div>
           <div class="slide">
-            <img src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=1200&h=675&fit=crop" alt="Bathroom remodel">
+            <img src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=900&h=1200&fit=crop" alt="Bathroom remodel">
             <div class="slide-overlay"></div>
             <div class="slide-caption">
               <span>Bathroom Remodel</span>
@@ -842,7 +846,7 @@
             </div>
           </div>
           <div class="slide">
-            <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=1200&h=675&fit=crop" alt="Custom deck addition">
+            <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=900&h=1200&fit=crop" alt="Custom deck addition">
             <div class="slide-overlay"></div>
             <div class="slide-caption">
               <span>Addition &bull; 2024</span>
@@ -850,7 +854,7 @@
             </div>
           </div>
           <div class="slide">
-            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=1200&h=675&fit=crop" alt="Detached garage with covered porch">
+            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=900&h=1200&fit=crop" alt="Detached garage with covered porch">
             <div class="slide-overlay"></div>
             <div class="slide-caption">
               <span>New Build &bull; 2021</span>
@@ -858,7 +862,7 @@
             </div>
           </div>
           <div class="slide">
-            <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=1200&h=675&fit=crop" alt="Basement finishing">
+            <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=900&h=1200&fit=crop" alt="Basement finishing">
             <div class="slide-overlay"></div>
             <div class="slide-caption">
               <span>Basement Finishing</span>
@@ -866,7 +870,7 @@
             </div>
           </div>
           <div class="slide">
-            <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=1200&h=675&fit=crop" alt="Whole home remodel">
+            <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=900&h=1200&fit=crop" alt="Whole home remodel">
             <div class="slide-overlay"></div>
             <div class="slide-caption">
               <span>Whole Home</span>
